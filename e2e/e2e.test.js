@@ -26,7 +26,5 @@ describe('should toggle popup on click', () => {
     const btn = await form.$('.btn');
     btn.click();
     await page.waitFor('.popup');
-    btn.click();
-    await page.waitFor(5000);
   });
 });
