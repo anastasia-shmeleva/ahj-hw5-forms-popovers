@@ -32,7 +32,7 @@ export default class Popup {
 
     if (targetElem) {
       const coords = targetElem.getBoundingClientRect();
-      popup.style.bottom = `${coords.top + 20}px`;
+      popup.style.bottom = `${coords.top + coords.bottom + coords.height}px`;
       popup.style.left = `${coords.left + coords.width / 2 - popup.offsetWidth / 2}px`;
       arrow.style.left = popup.style.left;
     }
