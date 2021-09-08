@@ -21,9 +21,9 @@ describe('should toggle popup on click', () => {
     });
 
     browser = await puppetteer.launch({
-      headless: false, // show gui
-      slowMo: 250,
-      devtools: true, // show devTools
+      // headless: false, // show gui
+      // slowMo: 250,
+      // devtools: true, // show devTools
     });
     page = await browser.newPage();
   });
